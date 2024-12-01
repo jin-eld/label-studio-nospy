@@ -194,7 +194,7 @@ class UserAPI(viewsets.ModelViewSet):
             user = User.objects.get(id=request.user.id)  # we need an updated user
             request.user.advanced_json = {  # request.user instance will be unchanged in request all the time
                 'email': user.email,
-                'allow_newsletters': user.allow_newsletters,
+                'allow_newsletters': False,
                 'update-notifications': 1,
                 'new-user': 0,
             }

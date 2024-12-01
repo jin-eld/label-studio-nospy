@@ -71,7 +71,7 @@ def save_user(request, next_page, user_form):
 
     request.advanced_json = {
         'email': user.email,
-        'allow_newsletters': user.allow_newsletters,
+        'allow_newsletters': False,
         'update-notifications': 1,
         'new-user': 1,
     }
