@@ -3,7 +3,7 @@ import { Switch } from "react-router";
 import { StaticContent } from "../app/StaticContent/StaticContent";
 import { MenubarContext } from "../components/Menubar/Menubar";
 
-import { SentryRoute as Route } from "../config/Sentry";
+import { Route } from "react-router";
 
 const extractModalRoutes = (children) => {
   const modalRoutes = [];

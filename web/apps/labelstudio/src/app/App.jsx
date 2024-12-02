@@ -5,7 +5,6 @@ import React from "react";
 import { render } from "react-dom";
 import { Router } from "react-router-dom";
 import { LEAVE_BLOCKER_KEY, leaveBlockerCallback } from "../components/LeaveBlocker/LeaveBlocker";
-import { initSentry } from "../config/Sentry";
 import { ApiProvider } from "../providers/ApiProvider";
 import { AppStoreProvider } from "../providers/AppStoreProvider";
 import { ConfigProvider } from "../providers/ConfigProvider";
@@ -47,8 +46,6 @@ const browserHistory = createBrowserHistory({
 });
 
 window.LSH = browserHistory;
-
-initSentry(browserHistory);
 
 const App = ({ content }) => {
   return (
