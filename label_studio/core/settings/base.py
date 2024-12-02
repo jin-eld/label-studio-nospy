@@ -712,8 +712,8 @@ DATA_MANAGER_FILTER_ALLOWLIST = list(
 )
 
 CSP_DEFAULT_SRC = ("'self'")
-CSP_STYLE_SRC = ("'self'")
-CSP_SCRIPT_SRC = ("'self'")
+CSP_STYLE_SRC = ("'self'", "'unsafe-inline'")
+CSP_SCRIPT_SRC = ("'self'", "'unsafe-inline'", "'unsafe-eval'")
 CSP_IMG_SRC = (
     "'self'",
     'data:'
